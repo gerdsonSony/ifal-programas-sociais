@@ -8,79 +8,79 @@
 	font-family: "arial";
 }
 
+/*
+	Css Genérico
+*/
 
-body {
-	background-color: #EBEFF2;
-
-}
-
-header {
-	background-color: #465A65;
-	position: fixed;
-	width: 100%;
-	height: 15%;
-}
-
-header a{
-	text-align: right;
-	text-decoration: none;
+/*Botões*/
+.botao {
+	border: none;
+	width: 300px;
 	color: #FFF;
-	float: right;
-	margin-right: 20px;
-}
-
-header h1 {
-	margin-bottom: 0;
-	margin-top: 25px;
-	margin-left: 17%;
-	color: white;
-}
-
-nav {
-	position: fixed;
-	background-color: #273236;
-	height: 100%;
-	width: 15%;
-}
-#logo{
-	background-color: #1F2A30;
-	width: 100%;
-	height: 15%;
-	color: white;
-	float: right;
-}
-#logo h2{
-	display: inline;
-}
-
-nav li a {
-	text-decoration: none;
-	display: inline-block;
-	width: 100%;
+	background-color: #28323A;
+	font-weight: bold;
+	font-size: 15px;
+	padding: 5px 0;
 	height: 30px;
+	border-radius: 5px;
+}
+
+/*Campos*/
+.campo{
+	border: none;
+	width: 300px;
+	color: black;
+	font-size: 15px;
+	padding: 5px 0;
+	height: 30px;
+	display: block;
+	padding: 0;
+}
+/*Fundo cadastros*/
+.fundo-cadastro {
+	background-color: #EBEFF2;
+}
+
+/*Fundo login*/
+.fundo-login {
+	background-color: #273238;
+}
+
+/*disposição dos Elementos	*/
+.cadastro {
+	width: 60%;
+	margin:0  auto;
+	text-align: center;
+}
+
+/*Logo na telas de login, recuperar senha e afins*/
+.logo{
+	background-color: #333E44;
+	height: 96px;
+	color: white;
+}
+
+/*painel de login*/
+.login {
+	width: 450px;
+	background-color: #FFF;
+	margin: 80px auto;
+	text-align: center;
+	color: white;
+}
+
+/*Links que são botoes*/
+.links-botoes{
+	display: block;
+	height: 20px;
+	border: none;
+	width: 300px;
 	color: #FFF;
-	margin-bottom: 10px;	
-	line-height: 30px;
-	padding-left: 10px;
-}
-
-nav li a:hover{
-	background-color: #63757F;
-}
-
-main {
-	margin-left: 17%;
-	padding-top: 10%;
-}
-
-section {
-	margin-bottom: 40px;
-}
-
-#global {
-	margin: 0;
-}
-
-.clear {
-	clear: both;
+	background-color: #28323A;
+	font-weight: bold;
+	font-size: 15px;
+	padding: 5px 0;
+	height: 30px;
+	border-radius: 5px;
+	text-align: center;
 }

@@ -2,17 +2,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Criar informativo</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/informativo.css">
 </head>
-<body>
-	<h1>Criar informativo</h1>
+<body class="fundo-cadastro">
+	<div class="cadastro">
+		<section class="logo">
+			<img src="img/logo64.png">
+			<h1>SIPS - IFAL</h1>
+		</section>
+		<h1>Criar informativo</h1>
+		<form class="cadastro" method="post" action="sucesso.html">
+			<input placeholder="Título" class="campo" type="text" name="titulo" id="_titulo"/><br/>
 
-	<label for="_titulo">Título:</label>
-	<input type="text" name="titulo" id="_titulo"/><br/>
+			<textarea placeholder="Descrição" class="campo" rows="5" name="texto" id="_texto"></textarea>
 
-	<label for="_texto">Texto:</label>
-	<textarea rows="5" name="texto" id="_texto"></textarea>
-
-	<p><input type="submit" value="Postar">
-	<input type="reset" value="Cancelar"></p>
+			<input class="botao" type="submit" value="Postar">
+			<input class="botao" type="reset" value="Cancelar">
+		</form>
+	</div>
 </body>
 </html>

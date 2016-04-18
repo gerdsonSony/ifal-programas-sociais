@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/formulario.css">
+	<title>Formulário de inscrição</title>
+</head>
+<body>
+	<div class="cadastro">
+		<section class="logo">
+			<img src="img/logo64.png">
+			<h1>SIPS - IFAL</h1>
+		</section>
+
+		<h1>Formulário de Inscrição</h1>
+		
+		
+		<form class="cadastro" method="post" action="sucesso.html">
+			<div id="etapa1">
+				<br/><br/>
+				<h4>Dados do Aluno</h4><br/>
+				<input class="campo" type="text" name="nome_completo" id="nome" placeholder="Nome" autofocus/><br/>
+				<input class="campo" type="text" name="data_nasc" id="nasc" placeholder="Data de Nascimento" /><br/>
+				
+				<select class="campo" name="sexo">
+				<option value=""disabled selected hidden>Sexo</option>
+				<option value="masc">Masculino</option>
+				<option value="femi">Feminino</option>
+				</select><br/>
+
+				<select class="campo" name="estado">
+				<option value=""disabled selected hidden>Estado Civil</option>
+				<option value="soltei">Solteiro</option>
+				<option value="casado">Casado</option>
+				<option value="viuvo">Viúvo</option>
+				</select><br/>
+
+				<input class="campo" type="text" name="telefone" id="fone" placeholder="Telefone"/><br/>
+				<input class="campo" type="text" name="rg" id="_rg" placeholder="RG"/><br/>
+				<input class="campo" type="text" name="cpf" id="_cpf" placeholder="CPF"/><br/>
+				<input class="campo" type="email" name="email" id="_email" placeholder="Email"/><br/>
+				<input class="campo" type="text" name="banco" id="_banco" placeholder="Banco"/><br/>
+				<input class="campo" type="text" name="agencia" id="_agencia" placeholder="Agência"/><br/>
+				<input class="campo" type="text" name="conta" id="cc" placeholder="Conta"/><br/>
+				<br/><br/>
+			</div>
+
+			<div id="etapa2">
+				<h4>Dados de endereço</h4><br/>
+				<input class="campo"  type="text" name="endereco" id="_endereco" placeholder="Endereço"/><br/>
+
+				<input  class="campo" type="text" name="num_end" id="_numero" placeholder="Numero"/><br/>
+				
+				<input  class="campo" type="text" name="bairro" id="_bairro" placeholder="Bairro"/><br/>
+				
+				<input  class="campo" type="text" name="cidade" id="_cidade" placeholder="Ciade"/><br/>
+				
+				<input  class="campo" type="text" name="estado" id="_estado" placeholder="Estado"/><br/>
+				
+				<input  class="campo" type="text" name="referencia" id="_pontoref" placeholder="Ponto de Referência"/><br/>
+				<br/><br/>
+			</div>
+			<div id="etapa3">
+				<h4>Dados da Família</h4><br/>
+				<input class="campo" type="text" name="nome_mae" id="_mae" placeholder="Nome da Mãe"/><br/>
+				
+				<input  class="campo" type="text" name="ocup_mae" id="_ocupmae" placeholder="Ocupação da Mãe"/><br/>
+				
+				<input  class="campo" type="text" name="rem_mae" id="_remmae" placeholder="Remuneração da Mãe"/><br/>
+				
+				<input  class="campo" type="text" name="nome_pai" id="_pai" placeholder="Nome do Pai"/><br/>
+				
+				<input  class="campo" type="text" name="ocup_pai" id="_ocuppai" placeholder="Ocupação do Pai"/><br/>
+				
+				<input  class="campo" type="text" name="rem_pai" id="_rempai" placeholder="Remuneração do Pai"/><br/>
+				
+				<input class="campo"  type="text" name="qntd_dep" id="_qntddep" placeholder="Quantidades de dependentes do aluno"><br/>
+				
+				<input  class="campo" type="text" name="qntd_fam" id="_qntdfam" placeholder="Quantidade de integrantes na família"><br/>
+				
+				<select class="campo" name="habitacao">
+				<option value=""disabled selected hidden>Habitação</option>
+				<option value="propria">Própria</option>
+				<option value="cedida">Cedida</option>
+				<option value="financ">Financiada</option>
+				<option value="alugada">Alugada</option>
+				</select><br/>
+				
+				<input class="campo" type="text" name="aluguel" for="_aluguel" placeholder="Valor do aluguel/prestação"/><br/>
+				<br/><br/>
+			</div>
+
+			<div id="etapa4">
+				<h4>Dados Estudantis</h4><br/>
+				<select class="campo" name="tipo_curso">
+				<option value=""disabled selected hidden>Tipo do Curso</option>
+				<option value="int">Integrado</option>
+				<option value="sub">Subsequente</option>
+				<option value="sup">Superior</option>
+				</select><br/>
+
+				<input class="campo" type="text" name="curso" id="_curso" placeholder="Nome do Curso"/><br/>
+
+				<!--<label>Curso:</label> -->
+				<!-- Opções do Integrado -->
+				<!--<select name"curso_int">
+				<option value="edifica"> Edificações</option>
+				<option value="eletro"> Eletrônica</option>
+				<option value="eletec"> Eletrotécnica</option>
+				<option value="estrad"> Estradas</option>
+				<option value="inform"> Informática</option>
+				<option value="mecani"> Mecânica</option>
+				<option value="quimic"> Química</option>
+				<option value="proeja"> Artesanato PROEJA</option>
+				</select> -->
+				<!-- Opções do Subsequente -->
+				<!--<select name"curso_sub">
+				<option value="eletec"> Eletrotécnica</option>
+				<option value="mecani"> Mecânica</option>
+				<option value="quimic"> Química</option>
+				<option value="segtra"> Segurança do Trabalho</option>
+				</select> -->
+				<!-- Opções do Superior -->
+				<!--<select name"curso_sup">
+				<option value="alimen"> Alimentos</option>
+				<option value="ciebio"> Ciências Biológicas</option>
+				<option value="desint"> Design de Interiores</option>
+				<option value="gestur"> Gestão de Turismo</option>
+				<option value="hotela"> Hotelaria</option>
+				<option value="letras"> Letras/Português</option>
+				<option value="matema"> Matemática</option>
+				<option value="quimic"> Química</option>
+				<option value="sisinf"> Sistemas de Informação</option>
+				</select> -->
+				<input class="campo" type="text" name="anoper" id="_anoper" placeholder="Ano/Período" />
+				<br/><br/>
+			</div>
+
+			<div id="etapa5">
+				<h4>Informações adicionais</h4><br/>
+				<textarea class="campo"rows="5" placeholder="Informações Adicionais"></textarea>
+			</div>
+
+			<p><input class="botao" type="submit" value="Confirmar">
+			<input class="botao" type="reset" value="Cancelar"></p>
+
+		</form>
+	</div>
+</body>
+</html>

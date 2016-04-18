@@ -1,0 +1,21 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: nome;
+	list-style: nome;
+	text-decoration: none;
+	box-sizing:border-box;
+}
+
+form{
+	text-align: center;
+}
+form input, textarea{
+	width: 100% !important;
+}
+form textarea{
+	margin-bottom: 10px;
+}
+form input.botao{
+	margin-bottom: 10px;
+}

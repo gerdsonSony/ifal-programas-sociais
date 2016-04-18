@@ -6,11 +6,14 @@
 	text-decoration: none;
 	box-sizing:border-box;
 }
-
-p {
-	margin: 5px auto;
-	text-align: left;
-	display: inline-block;
+form{
+	text-align: center;
+}
+form input{
+	width: 100% !important;
+}
+form input.botao{
+	margin-bottom: 10px;
 }
 
 
