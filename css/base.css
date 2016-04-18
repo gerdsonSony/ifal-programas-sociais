@@ -1,30 +1,30 @@
 *{
-	font-family: arial;
+	margin: 0;
+	padding: 0;
+	border: nome;
+	list-style: nome;
+	text-decoration: none;
+	box-sizing:border-box;
+	font-family: "arial";
 }
 
-html{
-	padding: 0;
-	margin: 0;
-}
 
 body {
-	margin: 0;
+	background-color: #EBEFF2;
+
 }
 
-header{
-	background-color: #7BB766;
-	color: #FFF;
+header {
+	background-color: #465A65;
 	position: fixed;
 	width: 100%;
-	margin-top: -19px;
-	padding: 10px 20px 10px 10px;
+	height: 15%;
 }
 
 header a{
 	text-align: right;
 	text-decoration: none;
 	color: #FFF;
-	margin-right: 10px;
 	float: right;
 	margin-right: 20px;
 }
@@ -32,41 +32,45 @@ header a{
 header h1 {
 	margin-bottom: 0;
 	margin-top: 25px;
+	margin-left: 17%;
+	color: white;
 }
 
 nav {
 	position: fixed;
-	width: 200px;
+	background-color: #273236;
+	height: 100%;
+	width: 15%;
 }
-
-nav ul {
-	margin-top: 85px;
-	padding-left: 0;
+#logo{
+	background-color: #1F2A30;
+	width: 100%;
+	height: 15%;
+	color: white;
+	float: right;
 }
-
-nav li {
-	list-style: none;
+#logo h2{
+	display: inline;
 }
 
 nav li a {
 	text-decoration: none;
 	display: inline-block;
-	background-color: #56774A;
 	width: 100%;
-	margin: 5px 0 5px 5px;
+	height: 30px;
 	color: #FFF;
-	padding: 5px;
-	border-radius: 3px;
+	margin-bottom: 10px;	
+	line-height: 30px;
+	padding-left: 10px;
 }
 
 nav li a:hover{
-	background-color: #7BB766;
+	background-color: #63757F;
 }
 
 main {
-	margin-left: 215px;
-	padding-top: 85px;
-	padding-left: 15px;
+	margin-left: 17%;
+	padding-top: 10%;
 }
 
 section {
