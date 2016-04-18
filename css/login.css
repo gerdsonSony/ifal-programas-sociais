@@ -36,7 +36,7 @@ input[type=submit] {
 input.campo{
 	border: none;
 	width: 300px;
-	color: #FFF;
+	color: #333E44;
 	font-size: 15px;
 	padding: 5px 0;
 	height: 30px;
@@ -58,8 +58,8 @@ input.campo{
 	font-size: 10px;
 }
 
-/*a {
+a {
 	font-size: 10px;
 	text-decoration: none;
-	color: #28323A;
-}*/
+	color: #333E44;
+}

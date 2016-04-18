@@ -1,18 +1,60 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Criar informativo</title>
+	<title>Sistema de Programas Sociais - IFAL</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/aluno.css">
 </head>
 <body>
-	<h1>Criar informativo</h1>
+	<div id="global">
+		<header id="cabecalho">
+			<h1>Sistema de Programas Sociais - IFAL</h1>
+			<a href="index.html">Sair</a>
+			<div class="clear"></div>
+		</header>
+		<nav>
+			<section id="logo">
+				<img src="img/logo64.png">
+				<h2>SIPS</h2>
+			</section>
+			<ul>
+				<li>
+					<a href="">Programas Sociais</a>
+				</li>
+				<li>
+					<a href="submeter-inscricao.html">Submeter Inscrição</a>
+				</li>
+				<li>
+					<a href="perfil-aluno.html">Dados Pessoais</a>
+				</li>
+				<li>
+					<a href="">Alterar Senha</a>
+				</li>
+			</ul>
+		</nav>
 
-	<label for="_titulo">Título:</label>
-	<input type="text" name="titulo" id="_titulo"/><br/>
+		<main id="corpo">
+			<section id="title">
+				<h1>Criar Informativo</h1>
+			</section>
+			<section>
+				<form method="post" action="#">
+					<label for="_titulo">Título:</label><br/>
+					<input type="text" name="titulo" id="_titulo"/>
+					<br/>
 
-	<label for="_texto">Texto:</label>
-	<textarea rows="5" name="texto" id="_texto"></textarea>
+					<label for="_texto">Texto:</label><br/>
+					<textarea rows="5" name="texto" id="_texto"></textarea>
+					<br/>
 
-	<p><input type="submit" value="Postar">
-	<input type="reset" value="Cancelar"></p>
+					<input type="submit" value="Postar">
+					<input type="reset" value="Cancelar">
+
+				</form>
+
+			</section>
+		</main>
+	</div>
 </body>
 </html>

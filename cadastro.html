@@ -2,44 +2,91 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="base.css">
-	<title>Sistema Serviço Social</title>
+	<title>Sistema de Programas Sociais - IFAL</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
 </head>
 <body>
-	<div>
-	<h1>Cadastro de Aluno</h1>
-	<form method="post" action="#">
-		<label for="_matricula">Matrícula:</label>
-		<input type="text" name="matricula" id="_matricula" autofocus>
-		<br/>
+	<div id="global">
+		<header id="cabecalho">
+			<h1>Sistema de Programas Sociais - IFAL</h1>
+			<a href="login.html">Acesso</a>
+		</header>
+		<nav>
+			<section id="logo">
+				<img src="img/logo64.png">
+				<h2>SIPS</h2>
+			</section>
+			
+			<ul>
+				<li>
+					<a href="index.html">Pagina Inicial</a>
+				</li>
+				<li>
+					<a href="">Calendário Acadêmico</a>
+				</li>
+				<li>
+					<a href="">Resultados das Seleções</a>
+				</li>
+				<li>
+					<a href="">Programas</a>
+				</li>
+				<li>
+					<a href="">Alunos</a>
+				</li>
+				<li>
+					<a href="">Informativos</a>
+				</li>
+				<li>
+					<a href="">Assistentes Sociais</a>
+				</li>
+				<li>
+					<a href="">Mensagens</a>
+				</li>
+				<li>
+					<a href="">Sobre nós</a>
+				</li>
+			</ul>
+		</nav>
 
-		<label for="_cpf">CPF:</label>
-		<input type="text" name="cpf" id="_cpf">
-		<br/>
+		<main id="corpo">
+			<section id="title">
+				<h1>Cadastro de Aluno</h1>
+			</section>
+			<section id="formulario">
+				<form method="post" action="#">
+					<label for="_matricula">Matrícula:</label><br/>
+					<input type="text" name="matricula" id="_matricula" autofocus>
+					<br/>
 
-		<label for="_data">Data de nascimento:</label>
-		<input type="text" name="data_nasc" id="_data">
-		<br/>
+					<label for="_cpf">CPF:</label><br/>
+					<input type="text" name="cpf" id="_cpf">
+					<br/>
 
-		<label for="_rg">Identidade:</label>
-		<input type="text" name="identidade" id="_rg">
-		<br/>
+					<label for="_data">Data de nascimento:</label><br/>
+					<input type="text" name="data_nasc" id="_data">
+					<br/>
 
-		<label for="_email">Email:</label>
-		<input type="email" name="email" id="_email">
-		<br/>
+					<label for="_rg">Identidade:</label><br/>
+					<input type="text" name="identidade" id="_rg">
+					<br/>
 
-		<label for="_senha">Senha:</label>
-		<input type="password" name="senha" id="_senha">
-		<br/>
+					<label for="_email">Email:</label><br/>
+					<input type="email" name="email" id="_email">
+					<br/>
 
-		<label for="_senha1">Confirmar senha:</label>
-		<input type="password1" name="senha1" id="_senha1">
-		<br/>
+					<label for="_senha">Senha:</label><br/>
+					<input type="password" name="senha" id="_senha">
+					<br/>
 
-		<input type="reset" value="Cancelar">
-		<input type="submit" value="Confirmar">
-	</form>
+					<label for="_senha1">Confirmar senha:</label><br/>
+					<input type="password1" name="senha1" id="_senha1">
+					<br/>
+
+					<input type="reset" value="Cancelar">
+					<input type="submit" value="Confirmar">
+				</form>
+			</section>
+		</main>
 	</div>
 </body>
 </html>

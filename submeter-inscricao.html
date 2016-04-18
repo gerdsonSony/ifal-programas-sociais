@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Sistema de Programas Sociais - IFAL</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/aluno.css">
+</head>
+<body>
+	<div id="global">
+		<header id="cabecalho">
+			<h1>Sistema de Programas Sociais - IFAL</h1>
+			<a href="index.html">Sair</a>
+			<div class="clear"></div>
+		</header>
+		<nav>
+			<section id="logo">
+				<img src="img/logo64.png">
+				<h2>SIPS</h2>
+			</section>
+			<ul>
+				<li>
+					<a href="">Programas Sociais</a>
+				</li>
+				<li>
+					<a href="submeter-inscricao.html">Submeter Inscrição</a>
+				</li>
+				<li>
+					<a href="perfil-aluno.html">Dados Pessoais</a>
+				</li>
+				<li>
+					<a href="">Alterar Senha</a>
+				</li>
+			</ul>
+		</nav>
+
+		<main id="corpo">
+			<section id="title">
+				<h1>Submeter Inscrição</h1>
+			</section>
+			<section>
+				<form method="post" action="#">
+					<fieldset> <legend>Dados do aluno</legend>
+						<label for="nome">Nome completo:</label><br/>
+						<input type="text" name="nome_completo" id="nome" autofocus/><br/>
+						
+						<label for="nasc">Data de nascimento:</label><br/>
+						<input type="text" name="data_nasc" id="nasc"/><br/>
+						
+						<label>Sexo:</label>
+						<input type="radio" name="sexo" value="m" checked="checked"/> Masculino
+						<input type="radio" name="sexo" value="f"/> Feminino<br/>
+						
+						<label>Estado Civil:</label><br/>
+						<select name="estado" class="opcoes">
+						<option value="soltei">Solteiro</option>
+						<option value="casado">Casado</option>
+						<option value="separa">Separado</option>
+						<option value="outros">Outros</option>
+						</select><br/>
+						
+						<label for="fone">Telefone:</label><br/>
+						<input type="text" name="telefone" id="fone"/><br/>
+						
+						<label for="_rg">RG:</label><br/>
+						<input type="text" name="rg" id="_rg"/><br/>
+						
+						<label for="_cpf">CPF:</label><br/>
+						<input type="text" name="cpf" id="_cpf"/><br/>
+						
+						<label for="_email">Email:</label><br/>
+						<input type="email" name="email" id="_email"/><br/>
+						
+						<label for="_banco">Banco:</label><br/>
+						<input type="text" name="banco" id="_banco"/><br/>
+						
+						<label for="_agencia">Agência:</label><br/>
+						<input type="text" name="agencia" id="_agencia"/><br/>
+						
+						<label for="cc">Conta Corrente:</label><br/>
+						<input type="text" name="conta" id="cc"/><br/>
+
+					</fieldset>
+					<br/><br/>
+
+					<fieldset> <legend>Dados de endereço</legend>
+						<label for="_endereco">Endereço:</label><br/>
+						<input type="text" name="endereco" id="_endereco"/><br/>
+
+						<label for="_numero">Número:</label><br/>
+						<input type="text" name="num_end" id="_numero"/><br/>
+						
+						<label for="_bairro">Bairro:</label><br/>
+						<input type="text" name="bairro" id="_bairro"/><br/>
+						
+						<label for="_cidade">Cidade:</label><br/>
+						<input type="text" name="cidade" id="_cidade"/><br/>
+						
+						<label for="_estado">Estado:</label><br/>
+						<input type="text" name="estado" id="_estado"/><br/>
+						
+						<label for="_pontoref">Ponto de referência:</label><br/>
+						<input type="text" name="referencia" id="_pontoref"/><br/>
+					</fieldset>
+					<br/><br/>
+
+					<fieldset> <legend>Dados da família</legend>
+						<label for="_mae">Nome da mãe:</label><br/>
+						<input type="text" name="nome_mae" id="_mae"/><br/>
+						
+						<label for="_ocupmae">Ocupação mãe:</label><br/>
+						<input type="text" name="ocup_mae" id="_ocupmae"/><br/>
+						
+						<label for="_remmae">Remuneração da mãe:</label><br/>
+						<input type="text" name="rem_mae" id="_remmae"/><br/>
+						
+						<label for="_pai">Nome do pai:</label><br/>
+						<input type="text" name="nome_pai" id="_pai"><br/>
+						
+						<label for="_ocuppai">Ocupação do pai:</label><br/>
+						<input type="text" name="ocup_pai" id="_ocuppai"/><br/>
+						
+						<label for="_rempai">Remuneração do pai:</label><br/>
+						<input type="text" name="rem_pai" id="_rempai"/><br/>
+						
+						<label for="_qntddep">Número de dependentes do aluno:</label><br/>
+						<input type="text" name="qntd_dep" id="_qntddep"><br/>
+						
+						<label for="_qntdfam">Número de integrantes da família:</label><br/>
+						<input type="text" name="qntd_fam" id="_qntdfam"><br/>
+						
+						<label>Pais separados:</label>
+						<input type="radio" name="pais_sep"> Sim
+						<input type="radio" name="pais_sep" checked="checked"> Não<br/>
+						
+						<label>Falecidos</label>
+						<input type="checkbox" name="fal_mae">Mãe
+						<input type="checkbox" name="fal_pai">Pai<br/>
+						
+						<label>Habitação:</label>
+						<select name="habitacao" class="opcoes">
+						<option value="propri">Própria</option>
+						<option value="cedida">Cedida</option>
+						<option value="financ">Financiada</option>
+						<option value="alugad">Alugada</option><br/>
+						</select><br/>
+						
+						<label for="_aluguel">Valor do aluguel:</label><br/>
+						<input type="text" name="aluguel" for="_aluguel"/><br/>
+					</fieldset>
+					<br/><br/>
+
+					<fieldset> <legend>Dados estudantis</legend>
+						<!--<label>Tipo de Curso:</label>
+						<select name"tipo_curso">
+						<option value="int"> Integrado</option>
+						<option value="sub"> Subsequente</option>
+						<option value="sup"> Superior</option>
+						</select>-->
+						
+						<label for="_curso">Curso:</label>
+						<input type="text" name="curso" id="_curso"/><br/>
+
+						<!--<label>Curso:</label> -->
+						<!-- Opções do Integrado -->
+						<!--<select name"curso_int">
+						<option value="edifica"> Edificações</option>
+						<option value="eletro"> Eletrônica</option>
+						<option value="eletec"> Eletrotécnica</option>
+						<option value="estrad"> Estradas</option>
+						<option value="inform"> Informática</option>
+						<option value="mecani"> Mecânica</option>
+						<option value="quimic"> Química</option>
+						<option value="proeja"> Artesanato PROEJA</option>
+						</select> -->
+						<!-- Opções do Subsequente -->
+						<!--<select name"curso_sub">
+						<option value="eletec"> Eletrotécnica</option>
+						<option value="mecani"> Mecânica</option>
+						<option value="quimic"> Química</option>
+						<option value="segtra"> Segurança do Trabalho</option>
+						</select> -->
+						<!-- Opções do Superior -->
+						<!--<select name"curso_sup">
+						<option value="alimen"> Alimentos</option>
+						<option value="ciebio"> Ciências Biológicas</option>
+						<option value="desint"> Design de Interiores</option>
+						<option value="gestur"> Gestão de Turismo</option>
+						<option value="hotela"> Hotelaria</option>
+						<option value="letras"> Letras/Português</option>
+						<option value="matema"> Matemática</option>
+						<option value="quimic"> Química</option>
+						<option value="sisinf"> Sistemas de Informação</option>
+						</select> -->
+
+						<label for="_anoper">Ano/Período:</label>
+						<input type="text" name="anoper" id="_anoper"/>
+					</fieldset>
+					<br/><br/>
+
+					<fieldset> <legend>Informações adicionais</legend>
+						<textarea rows="5"></textarea>
+					</fieldset>
+					
+
+					<p><input type="submit" value="Confirmar">
+					<input type="reset" value="Cancelar"></p>
+				</form>
+
+			</section>
+		</main>
+	</div>
+</body>
+</html>
