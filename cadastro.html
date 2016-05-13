@@ -2,90 +2,86 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Sistema de Programas Sociais - IFAL</title>
+	<title>Meu perfil</title>
 	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/aluno.css">
 </head>
 <body>
 	<div id="global">
-		<header id="cabecalho">
-			<h1>Sistema de Programas Sociais - IFAL</h1>
-			<a href="login.html">Acesso</a>
-		</header>
 		<nav>
-			<section id="logo">
-				<img src="img/logo64.png">
-				<h2>SIPS</h2>
-			</section>
-			
+			<a href="index.html">
+				<section id="logo">
+					<img src="img/logo64.png">
+					<h2>SIPS</h2>
+				</section>
+			</a>
+
 			<ul>
 				<li>
-					<a href="index.html">Pagina Inicial</a>
+					<a href="index.html">Página Inicial</a>
 				</li>
 				<li>
-					<a href="">Calendário Acadêmico</a>
+					<a href="docs/calendario2016.pdf">Calendário Acadêmico</a>
 				</li>
 				<li>
-					<a href="">Resultados das Seleções</a>
+					<a href="resultados-selecoes.html">Resultados/Seleções</a>
 				</li>
 				<li>
-					<a href="">Programas</a>
+					<a href="programas-sociais.html">Programas</a>
 				</li>
 				<li>
-					<a href="">Alunos</a>
+					<a href="informativos.html">Informativos</a>
 				</li>
 				<li>
-					<a href="">Informativos</a>
-				</li>
-				<li>
-					<a href="">Assistentes Sociais</a>
-				</li>
-				<li>
-					<a href="">Mensagens</a>
-				</li>
-				<li>
-					<a href="">Sobre nós</a>
+					<a href="fale-conosco.html">Fale Conosco</a>
 				</li>
 			</ul>
 		</nav>
 
 		<main id="corpo">
-			<section id="title">
-				<h1>Cadastro de Aluno</h1>
-			</section>
-			<section id="formulario">
-				<form method="post" action="sucesso.html">
-					<label for="_matricula">Matrícula:</label><br/>
-					<input type="text" name="matricula" id="_matricula" autofocus>
-					<br/>
+			<header id="cabecalho">
+				<h1 class="logo">Sistema de Programas Sociais - IFAL</h1>
+				<a href="login.html">Acesso</a>
+			</header>
+			<div class="content">
+				<section>
+					<h1>Cadastro de Aluno</h1>
+				</section>
+				<section id="formulario">
+					<form method="post" action="sucesso.html">
+						<label for="_matricula">Matrícula:</label><br/>
+						<input type="text" name="matricula" id="_matricula" autofocus>
+						<br/>
 
-					<label for="_cpf">CPF:</label><br/>
-					<input type="text" name="cpf" id="_cpf">
-					<br/>
+						<label for="_cpf">CPF:</label><br/>
+						<input type="text" name="cpf" id="_cpf">
+						<br/>
 
-					<label for="_data">Data de nascimento:</label><br/>
-					<input type="text" name="data_nasc" id="_data">
-					<br/>
+						<label for="_data">Data de nascimento:</label><br/>
+						<input type="date" name="data_nasc" id="_data">
+						<br/>
 
-					<label for="_rg">Identidade:</label><br/>
-					<input type="text" name="identidade" id="_rg">
-					<br/>
+						<label for="_rg">Identidade:</label><br/>
+						<input type="text" name="identidade" id="_rg">
+						<br/>
 
-					<label for="_email">Email:</label><br/>
-					<input type="email" name="email" id="_email">
-					<br/>
+						<label for="_email">Email:</label><br/>
+						<input type="email" name="email" id="_email">
+						<br/>
 
-					<label for="_senha">Senha:</label><br/>
-					<input type="password" name="senha" id="_senha">
-					<br/>
+						<label for="_senha">Senha:</label><br/>
+						<input type="password" name="senha" id="_senha">
+						<br/>
 
-					<label for="_senha1">Confirmar senha:</label><br/>
-					<input type="password1" name="senha1" id="_senha1">
-					<br/>
+						<label for="_senha1">Confirmar senha:</label><br/>
+						<input type="password" name="senha1" id="_senha1">
+						<br/>
 
-					<input type="reset" value="Cancelar">
-					<input type="submit" value="Confirmar">
-				</form>
-			</section>
+						<input type="reset" value="Cancelar">
+						<input type="submit" value="Confirmar">
+					</form>
+				</section>
+			</div>
 		</main>
 	</div>
 </body>

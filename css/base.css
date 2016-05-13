@@ -1,8 +1,8 @@
 *{
 	margin: 0;
 	padding: 0;
-	border: nome;
-	list-style: nome;
+	border: none;
+	list-style: none;
 	text-decoration: none;
 	box-sizing:border-box;
 	font-family: "arial";
@@ -20,23 +20,23 @@ body {
 header {
 	background-color: #465A65;
 	position: fixed;
-	width: 100%;
-	height: 15%;
+	width: calc(100% - 15%);
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
 }
 
 header a{
-	text-align: right;
 	text-decoration: none;
 	color: #FFF;
-	float: right;
-	margin-right: 20px;
 }
 
 header h1 {
-	margin-bottom: 0;
-	margin-top: 25px;
-	margin-left: 17%;
 	color: white;
+	cursor: default;
+	webkit-user-select: none;
 }
 
 nav {
@@ -44,14 +44,17 @@ nav {
 	background-color: #273236;
 	height: 100%;
 	width: 15%;
+	z-index: 999999999;
 }
+
 #logo{
 	background-color: #1F2A30;
 	width: 100%;
-	height: 15%;
+	height: 80px;
 	color: white;
 	float: right;
 }
+
 #logo h2{
 	display: inline;
 }
@@ -62,23 +65,34 @@ nav li a {
 	width: 100%;
 	height: 30px;
 	color: #FFF;
-	margin-bottom: 10px;	
+	margin-bottom: 10px;
 	line-height: 30px;
 	padding-left: 10px;
 }
 
-nav li a:hover{
+nav li a:hover {
 	background-color: #63757F;
 }
 
-main {
-	margin-left: 17%;
-	padding-top: 10%;
+#corpo {
+	padding-left: 15%;
+	display: block;
+	position: relative;
+	top: 80px;
+	overflow: hidden;
+}
+
+#corpo .content {
+	padding: 20px;
 }
 
 section {
 	margin-bottom: 40px;
 	color: #333E44;
+}
+
+nav section {
+	margin-bottom: 10px;
 }
 
 #global {
@@ -99,6 +113,16 @@ input[type=submit], input[type=reset]{
 	padding: 5px 0;
 	height: 30px;
 	border-radius: 5px;
+}
+
+input.campo{
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	width: 300px;
+	color: #333E44;
+	font-size: 15px;
+	padding: 15px;
+	height: 30px;
 }
 
 input[type=radio], input[type=checkbox] {
@@ -133,4 +157,62 @@ form textarea {
 form select {
 	width: 150px;
 	margin-bottom: 15px;
+}
+
+.informativo {
+	margin-bottom: 20px;
+}
+
+fieldset {
+	margin-bottom: 20px;
+}
+
+.botao {
+	border: none;
+	width: 200px;
+	color: #FFF;
+	background-color: #28323A;
+	font-weight: bold;
+	font-size: 15px;
+	padding: 5px 0;
+	height: 30px;
+	border-radius: 5px;
+	float: left;
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+.profile .foto {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile {
+	height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.profile:hover .dropdown{
+	display: block !important;
+}
+
+.profile .dropdown {
+    display: none;
+	position: absolute;
+    top: 80px;
+    right: 20px;
+    background: #567FA3;
+    min-width: 50px;
+    padding: 5px;
+    border-radius: 0 0 3px 3px;
+}
+
+.profile .dropdown a {
+	display: block;
+	overflow: hidden;
+    padding: 5px 5px;
+    text-decoration: none;
 }

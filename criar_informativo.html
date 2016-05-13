@@ -2,58 +2,68 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Sistema de Programas Sociais - IFAL</title>
+	<title>Meu perfil</title>
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/aluno.css">
 </head>
 <body>
 	<div id="global">
-		<header id="cabecalho">
-			<h1>Sistema de Programas Sociais - IFAL</h1>
-			<a href="index.html">Sair</a>
-			<div class="clear"></div>
-		</header>
 		<nav>
-			<section id="logo">
-				<img src="img/logo64.png">
-				<h2>SIPS</h2>
-			</section>
+			<a href="index.html">
+				<section id="logo">
+					<img src="img/logo64.png">
+					<h2>SIPS</h2>
+				</section>
+			</a>
+
 			<ul>
 				<li>
-					<a href="">Programas Sociais</a>
+					<a href="index.html">Página Inicial</a>
 				</li>
 				<li>
-					<a href="submeter-inscricao.html">Submeter Inscrição</a>
+					<a href="docs/calendario2016.pdf">Calendário Acadêmico</a>
 				</li>
 				<li>
-					<a href="perfil-aluno.html">Dados Pessoais</a>
+					<a href="resultados-selecoes.html">Resultados/Seleções</a>
 				</li>
 				<li>
-					<a href="">Alterar Senha</a>
+					<a href="programas-sociais.html">Programas</a>
+				</li>
+				<li>
+					<a href="informativos.html">Informativos</a>
+				</li>
+				<li>
+					<a href="fale-conosco.html">Fale Conosco</a>
 				</li>
 			</ul>
 		</nav>
 
 		<main id="corpo">
-			<section id="title">
-				<h1>Criar Informativo</h1>
-			</section>
-			<section>
-				<form method="post" action="#">
-					<label for="_titulo">Título:</label><br/>
-					<input type="text" name="titulo" id="_titulo"/>
-					<br/>
+			<header id="cabecalho">
+				<h1 class="logo">Sistema de Programas Sociais - IFAL</h1>
+				<a href="login.html">Acesso</a>
+			</header>
+			<div class="content">
+				<section>
+					<h1>Criar Informativo</h1>
+				</section>
+				<section>
+					<form method="post" action="#">
+						<label for="_titulo">Título:</label><br/>
+						<input type="text" name="titulo" id="_titulo"/>
+						<br/>
 
-					<label for="_texto">Texto:</label><br/>
-					<textarea rows="5" name="texto" id="_texto"></textarea>
-					<br/>
+						<label for="_texto">Texto:</label><br/>
+						<textarea rows="5" name="texto" id="_texto"></textarea>
+						<br/>
 
-					<input type="submit" value="Postar">
-					<input type="reset" value="Cancelar">
+						<input type="submit" value="Postar">
+						<input type="reset" value="Cancelar">
 
-				</form>
+					</form>
 
-			</section>
+				</section>
+			</div>
 		</main>
 	</div>
 </body>

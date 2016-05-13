@@ -2,96 +2,120 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Sistema de Programas Sociais - IFAL</title>
+	<title>Meu perfil</title>
 	<link rel="stylesheet" type="text/css" href="css/base.css">
-	<link rel="stylesheet" type="text/css" href="css/aluno.css">
 </head>
 <body>
 	<div id="global">
-		<header id="cabecalho">
-			<h1>Sistema de Programas Sociais - IFAL</h1>
-			<a href="index.html">Sair</a>
-			<div class="clear"></div>
-		</header>
 		<nav>
-			<section id="logo">
-				<img src="img/logo64.png">
-				<h2>SIPS</h2>
-			</section>
+			<a href="index.html">
+				<section id="logo">
+					<img src="img/logo64.png">
+					<h2>SIPS</h2>
+				</section>
+			</a>
+
 			<ul>
 				<li>
-					<a href="">Programas Sociais</a>
+					<a href="perfil-aluno.html">Meu perfil</a>
 				</li>
 				<li>
 					<a href="submeter-inscricao.html">Submeter Inscrição</a>
 				</li>
 				<li>
-					<a href="">Dados Pessoais</a>
+					<a href="programas-sociais-aluno.html">Programas Sociais</a>
 				</li>
 				<li>
-					<a href="alterar_senha.html">Alterar Senha</a>
+					<a href="alterar-senha.html">Alterar Senha</a>
 				</li>
 			</ul>
 		</nav>
 
 		<main id="corpo">
-			<section id="title">
-				<h1>Perfil do Aluno</h1>
-			</section>
-			<section id="dados-principais">
-				<div id="foto">
-					<img src="img/user.png">
+			<header id="cabecalho">
+				<h1 class="logo">Sistema de Programas Sociais - IFAL</h1>
+				<div class="profile">
+					<img class="foto" src="img/user.png">
+					<div class="dropdown">
+						<a href="editar-perfil.html">Editar perfil</a>
+						<a href="index.html">Sair</a>
+					</div>
 				</div>
-				<div id="dados">
-					<p>Nome: Jose da Silva</p>
-					<p>Matrícula: 123456789</p>
-					<p>Curso: Sistemas de Informação</p>
-					<p>E-mail: email@gmail.com</p>
-				</div>
-				<div class="clear"></div>
-			</section>
-			<section id="dados-gerais">
-				<h2>Dados Gerais</h2>
-				<p>
-					Data de Nascimento: XX/XX/XXX
-				</p>
-				<p>
-					Identidade: XXXXXXXXXX
-				</p>
-				<p>
-					Ano de Ingresso: XXXX
-				</p>
-			</section>
-			
-			<section>
-				<h2>Perfil Familiar</h2>
-				<div>
-					<h3>Lorem ipsum dolor sit amet</h3>
-					<p>
-						Suspendisse nec risus urna. Sed sollicitudin sem sit amet sagittis condimentum. Sed at pharetra lacus, id mollis massa. Mauris at sodales ligula. Pellentesque pharetra lectus at convallis pretium. Fusce laoreet, felis sed elementum volutpat, sapien orci varius sem, sit amet eleifend justo felis sed urna. Vestibulum molestie orci ex.
-					</p>
-				</div>
+			</header>
+			<div class="content">
+				<section>
+					<h1>Perfil do Aluno</h1>
+				</section>
 
-				<div>
-					<h3>Nullam eget sem tincidunt</h3>
-					<p>
-						Praesent eleifend, nunc quis ullamcorper tristique, lorem nisl elementum turpis, non ultrices lectus diam vel nulla. Mauris tincidunt elit ac faucibus consectetur. Cras aliquam massa nisi, vitae eleifend eros mollis vel. Pellentesque lacinia sem metus, vitae aliquet lacus molestie in.
-					</p>
-				</div>
-			</section>
+				<section>
+					<h2>Dados gerais</h2>
+						<p>Nome: Jose da Silva</p>
+						<p>Matrícula: 123456789</p>
+						<p>Curso: Sistemas de Informação</p>
+						<p>E-mail: email@gmail.com</p>
+						<p>Data de Nascimento: XX/XX/XXX</p>
+						<p>Identidade: XXXXXXXXXX</p>
+						<p>Ano de Ingresso: XXXX</p>
+					</section>
 
-			<section id="dados-bancarios">
-				<h2>Dados Bancários</h2>
-					<p>
-						Banco: XXXXXXX
-					</p>
-					<p>
-						Agência: XXXXXXX
-					</p>
-					<p>
-						Conta: XXXXXXX
-					</p>
-			</section>
+				<section>
+					<h2>Dados bancários</h2>
+						<p>Banco: XXXXXXX</p>
+						<p>Agência: XXXXXXX</p>
+						<p>Conta: XXXXXXX</p>
+				</section>
+
+				<section>
+					<h2>Dados de endereço</h2>
+					<div>
+						<h3>Lorem ipsum dolor sit amet</h3>
+						<p>
+							Suspendisse nec risus urna. Sed sollicitudin sem sit amet sagittis condimentum. Sed at pharetra lacus, id mollis massa. Mauris at sodales ligula. Pellentesque pharetra lectus at convallis pretium. Fusce laoreet, felis sed elementum volutpat, sapien orci varius sem, sit amet eleifend justo felis sed urna. Vestibulum molestie orci ex.
+						</p>
+					</div>
+
+					<div>
+						<h3>Nullam eget sem tincidunt</h3>
+						<p>
+							Praesent eleifend, nunc quis ullamcorper tristique, lorem nisl elementum turpis, non ultrices lectus diam vel nulla. Mauris tincidunt elit ac faucibus consectetur. Cras aliquam massa nisi, vitae eleifend eros mollis vel. Pellentesque lacinia sem metus, vitae aliquet lacus molestie in.
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<h2>Dados da família</h2>
+					<div>
+						<h3>Lorem ipsum dolor sit amet</h3>
+						<p>
+							Suspendisse nec risus urna. Sed sollicitudin sem sit amet sagittis condimentum. Sed at pharetra lacus, id mollis massa. Mauris at sodales ligula. Pellentesque pharetra lectus at convallis pretium. Fusce laoreet, felis sed elementum volutpat, sapien orci varius sem, sit amet eleifend justo felis sed urna. Vestibulum molestie orci ex.
+						</p>
+					</div>
+
+					<div>
+						<h3>Nullam eget sem tincidunt</h3>
+						<p>
+							Praesent eleifend, nunc quis ullamcorper tristique, lorem nisl elementum turpis, non ultrices lectus diam vel nulla. Mauris tincidunt elit ac faucibus consectetur. Cras aliquam massa nisi, vitae eleifend eros mollis vel. Pellentesque lacinia sem metus, vitae aliquet lacus molestie in.
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<h2>Dados estudantis</h2>
+					<div>
+						<h3>Lorem ipsum dolor sit amet</h3>
+						<p>
+							Suspendisse nec risus urna. Sed sollicitudin sem sit amet sagittis condimentum. Sed at pharetra lacus, id mollis massa. Mauris at sodales ligula. Pellentesque pharetra lectus at convallis pretium. Fusce laoreet, felis sed elementum volutpat, sapien orci varius sem, sit amet eleifend justo felis sed urna. Vestibulum molestie orci ex.
+						</p>
+					</div>
+
+					<div>
+						<h3>Nullam eget sem tincidunt</h3>
+						<p>
+							Praesent eleifend, nunc quis ullamcorper tristique, lorem nisl elementum turpis, non ultrices lectus diam vel nulla. Mauris tincidunt elit ac faucibus consectetur. Cras aliquam massa nisi, vitae eleifend eros mollis vel. Pellentesque lacinia sem metus, vitae aliquet lacus molestie in.
+						</p>
+					</div>
+				</section>
+			</div>
 		</main>
 	</div>
 </body>
