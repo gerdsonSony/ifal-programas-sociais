@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Fale conosco</title>
+	<title>Criar informativo</title>
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/aluno.css">
 </head>
@@ -50,26 +50,23 @@
 			</header>
 			<div class="content">
 				<section>
-					<h1>Dados para Contato</h1>
+					<h1>Criar Informativo</h1>
 				</section>
 				<section>
-					<div class="informativo">
-						<h3>Instituto Federal de Alagoas</h3>
-						<p>
-							Email de Contato: portal@ifal.edu.br<br />
-							Telefone: (82) 3194-1150<br />
-							Endereço: Rua Odilon Vasconcelos, 103, Maceió (AL), 57035-660<br/>
-							Horário de Funcionamento: 07h às 19h.
-						</p>
-					</div>
+					<form method="post" action="#">
+						<label for="_titulo">Título:</label><br/>
+						<input type="text" name="titulo" id="_titulo"/>
+						<br/>
 
-					<div class="informativo">
-						<h3>Coordenadoria de Serviço Social</h3>
-						<p>
-							Telefone: (82) 2126-7057<br />
-							Horário de Funcionamento: 08h às 18h.
-						</p>
-					</div>
+						<label for="_texto">Texto:</label><br/>
+						<textarea rows="5" name="texto" id="_texto"></textarea>
+						<br/>
+
+						<input type="submit" value="Postar">
+						<input type="reset" value="Cancelar">
+
+					</form>
+
 				</section>
 			</div>
 		</main>

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Meu perfil</title>
+	<title>Editar perfil</title>
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/editar-perfil.css">
 </head>
@@ -64,7 +64,7 @@
 							<input type="date" name="data_nasc" placeholder="Data de nascimento"/>
 							<input type="text" name="sexo" placeholder="Sexo"/>
 							<input type="text" name="rg" placeholder="Identidade"/>
-							<input type="text" name="cpf" placeholder="CPF" />
+							<input type="text" name="cpf" placeholder="CPF" maxlength="14" OnKeyPress="formatar('###.###.###-##', this)"/>
 							<input type="email" name="email" placeholder="Email" />
 							<input type="text" name="estado_civil" placeholder="Estado Civil" />
 							<input type="text" name="telefone" placeholder="Telefone" />
