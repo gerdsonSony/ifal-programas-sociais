@@ -1,3 +1,30 @@
+function validarCampos() {
+    if($("#cpf").val() == ""){
+        alert('Por favor, preencha o campo CPF');
+        $("#cpf").focus();
+        return false;
+    }
+    if($("#senha").val() == ""){
+        alert('Por favor, preencha o campo Senha');
+        $("#senha").focus();
+        return false;
+    }
+}
+
+function formatar(mascara, documento){
+  var i = documento.value.length;
+  var saida = mascara.substring(0,1);
+  var texto = mascara.substring(i)
+
+  if (texto.substring(0,1) != saida){
+            documento.value += texto.substring(0,1);
+  }
+}
+
+
+//Formulário multistep. Fonte: http://codepen.io/atakan/pen/gqbIz
+
+//jQuery time
 
 //jQuery time
 var current_fs, next_fs, previous_fs; //fieldsets
@@ -76,5 +103,3 @@ $(".previous").click(function(){
 		easing: 'easeInOutBack'
 	});
 });
-
-
