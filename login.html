@@ -15,17 +15,17 @@
 		</section>
 		</a>
 
-		<form action="perfil-aluno.html" method="POST" onSubmit="return validarCampos(this)">
+		<form action="php/login.php" method="POST">
 			<p>
-				<input class="campo" type="text" name="cpf" id="cpf" maxlength="14" placeholder="CPF" autofocus OnKeyPress="formatar('###.###.###-##', this)">
+				<input class="campo" type="text" name="cpf" id="cpf" maxlength="14" placeholder="CPF" autofocus OnKeyPress="formatar('###.###.###-##', this)" required>
 			</p>
 			<br>
 			<p>
-				<input class="campo" type="password" name="senha" id="senha" placeholder="Senha">
+				<input class="campo" type="password" name="senha" id="senha" placeholder="Senha" required>
 			</p>
 			<br>
 			<p>
-				<input id="enviar" type="submit" value="Entrar">
+				<input type="submit" value="Entrar">
 			</p>
 		</form>
 		<section id="links">

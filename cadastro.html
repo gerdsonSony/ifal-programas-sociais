@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<title>Cadastro de Aluno</title>
 	<link rel="stylesheet" type="text/css" href="css/base.css">
-	<link rel="stylesheet" type="text/css" href="css/aluno.css">
 </head>
 <body>
 	<div id="global">
@@ -39,7 +38,7 @@
 		</nav>
 
 		<main id="corpo">
-			<header id="cabecalho">
+			<header>
 				<h1 class="logo">Sistema de Programas Sociais - IFAL</h1>
 				<div class="profile">
 					<img class="foto" src="img/goku.jpg">
@@ -52,8 +51,8 @@
 				<section>
 					<h1>Cadastro de Aluno</h1>
 				</section>
-				<section id="formulario">
-					<form method="post" action="sucesso.html">
+				<section>
+					<form action="php/cadastro.php" method="POST">
 						<label for="_matricula">Matrícula:</label><br/>
 						<input type="text" name="matricula" id="_matricula" autofocus>
 						<br/>
