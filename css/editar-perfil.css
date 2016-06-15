@@ -28,7 +28,7 @@ body {
 	display: none;
 }
 /*inputs*/
-#msform input, #msform textarea {
+#msform input, #msform textarea, #msform select , #msform select option{
 	padding: 15px;
 	border: 1px solid #ccc;
 	border-radius: 3px;
@@ -38,6 +38,9 @@ body {
 	font-family: montserrat;
 	color: #2C3E50;
 	font-size: 13px;
+}
+#msform select,#msform select option{
+	padding: 6px;
 }
 /*buttons*/
 #msform .action-button {

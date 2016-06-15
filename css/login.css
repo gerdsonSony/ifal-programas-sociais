@@ -1,5 +1,5 @@
 body {
-	background-color: #273238;
+	background: url('../img/background.png') repeat;
 }
 
 p {
@@ -11,10 +11,12 @@ p {
 #logo{
 	height: 100px;
 }
-
+#logo img{
+	margin-top: 20px;
+}
 #login {
 	width: 450px;
-	background-color: #FFF;
+	background-color: #EBEFF2;
 	margin: 80px auto;
 	text-align: center;
 }

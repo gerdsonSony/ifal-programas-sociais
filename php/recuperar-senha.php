@@ -6,7 +6,7 @@ $email = $_POST['email'];
 if( true ) { //verificar se o email existe no banco ($email=="")
 
 
-header("Location: ..\\sucesso.html");
+header("Location: ..\\sucesso.php");
 
 
 

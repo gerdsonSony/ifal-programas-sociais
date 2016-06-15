@@ -13,11 +13,11 @@ p {
 }
 
 body {
-	background-color: #EBEFF2;
+	/*background-color: #EBEFF2;*/
 }
 
 header {
-	background-color: #465A65;
+	background: url('../img/background.png') repeat;
 	position: fixed;
 	width: calc(100% - 15%);
 	height: 80px;
@@ -25,6 +25,8 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 20px;
+	top: 0;
+	right: 0;
 }
 
 header a{
@@ -40,9 +42,10 @@ header h1 {
 
 nav {
 	position: fixed;
-	background-color: #273236;
+	background: url('../img/background.png') repeat;
 	height: 100%;
 	width: 15%;
+	left: 0;
 	z-index: 999999999;
 }
 
@@ -101,7 +104,11 @@ nav section {
 .clear {
 	clear: both;
 }
-
+input[type=file]{
+	border:none;
+    display: inline-block;
+    cursor: pointer;
+}
 input[type=submit], input[type=reset]{
 	border: none;
 	width: 200px;
@@ -141,6 +148,7 @@ form input {
 	height: 30px;
 	font-size: 20px;
 	border: none;
+	border: 1px solid #ccc;
 }
 
 form fieldset {
@@ -151,15 +159,46 @@ form textarea {
 	width: 400px;
 	min-width: 200px;
 	border: none;
+	border: 1px solid #ccc;
 }
-
-form select {
-	width: 150px;
+form select, form select option {
 	margin-bottom: 15px;
+	display: inline-block;
+	width: 400px;
+	height: 30px;
+	font-size: 20px;
+	border: none;
+	border: 1px solid #ccc;
+}
+.informativo{
+	display: -webkit-flex;
+    display: flex;
+   -webkit-flex-wrap: wrap;
 }
 
-.informativo {
+.informativo li{
+	
+	width: 400px;
+	flex-grow: 1;
+	margin-left: 20px;
 	margin-bottom: 20px;
+	padding-bottom: 10px;
+	color: white;
+	text-align: center;
+	float:  left;
+	background: url('../img/background.png') repeat;
+}
+.informativo img{
+	width: 30px;
+	height: 30px;
+	margin-top: 10px;
+}
+.informativo a {
+	color: white;
+	text-decoration: none;
+}
+.informativo h2{
+	margin-top: 10px;
 }
 
 fieldset {
@@ -214,4 +253,82 @@ fieldset {
 	overflow: hidden;
     padding: 5px 5px;
     text-decoration: none;
+}
+.programa{
+	display: -webkit-flex;
+    display: flex;
+   -webkit-flex-wrap: wrap;
+}
+.programa li{
+	text-align: center;
+	background: url('../img/background.png') repeat;
+	color: white;
+	width: 400px;
+	flex-grow: 1;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+.programa img{
+	margin-top: 20px;
+	width: 70px;
+	margin-bottom: 20px
+}
+.programa img#novo{
+	margin-top: calc((50% - 70px)/2);
+}
+.programa a {
+	color: white;
+	text-decoration: none;
+	width: 100%;
+}
+.tabela{
+	width: 100%;
+	text-align: center;
+}
+.tabela th{
+	background: url('../img/background.png') repeat;
+	height: 40px;
+	color: white;
+}
+.tabela table, td, th{
+	border: 1px solid black;
+}
+.tabela td{
+	vertical-align: bottom;
+}
+
+.selecao {
+	display: -webkit-flex;
+    display: flex;
+   -webkit-flex-wrap: wrap;
+}
+.selecao li {
+	text-align: center;
+	background: url('../img/background.png') repeat;
+	color: white;
+	flex-grow: 1;
+	width: 400px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+.selecao li.encerrado{
+	background: url('../img/backInativo.png') repeat;
+}
+.selecao img{
+	width: 70px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.selecao img#novo{
+	margin-top: calc((50% - 120px)/2);
+}
+.selecao h2{
+	margin-top: 20px;
+}
+.selecao a {
+	color: white;
+	text-decoration: none;
+	width: 100%;
 }
